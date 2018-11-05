@@ -1,0 +1,93 @@
+f2=open("agree.csv","r")
+for row in f2.read(0):
+    row=row.split(0)
+f1=open("disagree.csv","r")
+
+
+print("Pick between a horse, dog, cat, sheep, pig, lion, tiger, cow, whale, dolphin, seal, octopus, squid, penguin, ostrich, sparrow, spider, ant, bee, wasp or a termite. Respond with \'Yes\' or \'No\'")
+legs=input("Does it have 4 legs?")
+if legs==f2.read():
+    pet=input("Is it a household pet")
+    if pet=="Yes":
+        dog=input("Is it related to wolves>")
+        if dog=="Yes":
+            print("Is it a dog?")
+        elif dog=="No":
+            cat=input("Is it related to a lion?")
+            if cat =="Yes":
+                print("Is it a cat")
+    elif pet=="No":
+        farm=input("Is it a farm animal?")
+        if farm =="Yes":
+            horse=input("Is it involved in a sport")
+            if horse=="Yes":
+                print("Is it a horse")
+            elif horse=="No":
+                sheep=input("Does it help in the production of wool")
+                if sheep=="Yes":
+                    print("Is it a sheep?")
+                elif sheep=="No":
+                    cow=input("Does it produce milk that humans reguarly drink?")
+                    if cow=="Yes":
+                        print("Is it a cow")
+                    elif cow=="No":
+                        print("Is it a pig")
+        elif farm=="No":   
+            zoo=input("Does it have stripes")
+            if zoo=="Yes":
+                print("Is it an tiger?")
+            elif zoo=="No":
+                print("Is it a lion?")
+        
+elif legs=="No":
+    sea=input("Is it a sea animal?")
+    if sea =="Yes":
+        mammal=input("Is it a mammal?")
+        if mammal=="Yes":
+            dolphin=input("Does it have cone shaped teeth?")
+            if dolphin=="Yes":
+                print("Is a dolphin")
+            elif dolphin=="No":
+                seal=input("Is it known for clapping at the zoo?")
+                if seal=="Yes":
+                    print("Is it a seal")
+                else:
+                    print("Is it a whale")
+        elif mammal=="No":
+            squid=input("Does it live in open water?")
+            if squid =="Yes":
+                print("Is it a squid?")
+            else:
+                print("Is it a octopus")
+        
+    elif sea=="No":
+        bird=input("Is it a bird?")
+        if bird=="Yes":
+            penguin=input("Is it in the movie \'Happy Feet\'?")
+            if penguin=="Yes":
+                print("Is it a penguin?")
+            else:
+                ost=input("Is it a large flightless bird?")
+                if ost=="Yes":
+                    print("Is it an ostrich?")
+                else:
+                    print("Is it a sparrow")
+
+
+        else:
+            insect=input("Is it an insect?")
+            if insect == "No":
+                print("Is it a spider")
+            else:
+                fly=input("Does it fly")
+                if fly=="Yes":
+                    bee=input("Can it sting more than once?")
+                    if bee=="No":
+                        print("Is it a bee")
+                    else:
+                        print("Is it a wasp")
+                elif fly=="No":
+                    print("Is it a termite?")
+
+
+
