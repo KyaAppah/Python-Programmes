@@ -1,0 +1,4 @@
+bill=int(input("Enter the bill's total"))
+people=int(input("Enter the amount of people that have had a meal"))
+cost=bill/people
+print("Each person needs to pay £"+str(round(cost,2)))
