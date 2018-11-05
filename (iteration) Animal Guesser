@@ -1,12 +1,6 @@
-f2=open("agree.csv","r")
-for row in f2.read(0):
-    row=row.split(0)
-f1=open("disagree.csv","r")
-
-
 print("Pick between a horse, dog, cat, sheep, pig, lion, tiger, cow, whale, dolphin, seal, octopus, squid, penguin, ostrich, sparrow, spider, ant, bee, wasp or a termite. Respond with \'Yes\' or \'No\'")
 legs=input("Does it have 4 legs?")
-if legs==f2.read():
+if legs=='Yes':
     pet=input("Is it a household pet")
     if pet=="Yes":
         dog=input("Is it related to wolves>")
