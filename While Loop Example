@@ -1,0 +1,10 @@
+temp=0
+totalTemp=0
+numberOfTemps=0
+temp=int(input("Enter next temperature"))
+while temp != -100:
+    totalTemp=totalTemp+temp
+    numberOfTemps=numberOfTemps+1
+    temp=int(input("Enter next temperature"))
+averageTemp=totalTemp/numberOfTemps
+print("The average is "+str(round(averageTemp,2))," rounded to two decimal places. \nThe average unrounded is "+str(averageTemp))
