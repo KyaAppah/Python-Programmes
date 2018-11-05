@@ -1,0 +1,19 @@
+def decToBin(): #function for conversions to make main program easier to work with
+    decimal = int(input('Please enter a number: '))
+    print(bin(decimal)[2:])#bin() function makes converting to binary easy
+
+def binToDec():
+    binary = input('Please enter a number in binary: ')
+    print(int(binary, 2)) #convert base 10 to base 2 via changing the integer. 
+
+answer=input("Would you like to convert a number? Type \'no\' to exit ")
+if answer=='no' or answer == 'No': #issue with logic in while loop function where it keeps repeating. To fix it I added an exit
+    exit()
+while answer != 'no' or answer != 'No':
+    choice = input('Would you like to 1. convert denary to binary or 2. convert binary to denary? Type \'no\' to exit. ')
+    if choice == '1' or choice == 'one'  or choice == 'One' or choice == 'denary to binary':
+        decToBin()
+    elif choice == 'no' or choice == 'No': #allows user to exit program
+        exit()
+    else:
+        binToDec()
