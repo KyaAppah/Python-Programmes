@@ -1,0 +1,15 @@
+choice=input('do you want to check if a number is happy? y/n').upper()
+while choice=='Y':
+
+    num1 = int(input("Enter a number to check if it is happy: "))
+    lists = set()
+    while 1:
+        if num1 == 1:
+            print ("Number is happy!")
+            break
+        num1 = sum(int(c) ** 2 for c in str(num1))
+        if num1 in lists:
+            print ("Number is sad!")
+            break
+        lists.add(num1)
+    choice=input('do you want to check if a number is happy? y/n').upper()
