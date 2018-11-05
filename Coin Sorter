@@ -1,0 +1,5 @@
+p1=int(input("Enter the total amount of 1p coins you have"))
+p2=int(input("Enter the total amount of 2p coins you have"))
+p5=int(input("Enter the total amount of 5p coins you have"))
+p20=int(input("Enter the total amount of 20p coins you have"))
+p50=int(input("Enter the total amount of 50p coins you have"))
